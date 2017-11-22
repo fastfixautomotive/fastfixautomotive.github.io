@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FastFix Automotive Ltd</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/styles/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/media/favicon.ico" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92954734-4"></script>
     <script>
@@ -17,101 +19,173 @@
       gtag('config', 'UA-92954734-4');
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"AutomotiveBusiness",
+      "image": 
+        "https://fastfixautomotive.github.io/resources/media/logo-medium.jpg",
+      "@id":"https://fastfixautomotive.github.io/",
+      "name":"FastFix Automtive Ltd",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"292C Great South RD, ",
+        "addressLocality":"Manurewa",
+        "addressRegion":"Auckland",
+        "postalCode":"21024",
+        "addressCountry":"NZ"
+      },
+      "geo":{
+        "@type":"GeoCoordinates",
+        "latitude": -37.031335,
+        "longitude": 174.905789
+      },
+      "telephone": "09 269 5521",
+      "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "15:00"
+      }
+      ]
+    }
+    </script>
 
-    <link rel="stylesheet" href="./resources/styles/styles-a061803752.css"/> 
+    <link rel="stylesheet" href="./resources/styles/styles-b510cc2c40.css"/> 
 
   </head>
   <body>
-    
-    <div class="site-header">
-      <div class="ui container">
-        <div class="ui grid">
-          <div class="sixteen wide mobile sixteen wide tablet only eight wide computer only column">
-            <img src="./resources/media/logo-medium.jpg" class="ui image site-header__logo">
-          </div>
-          <div class="one wide tablet one wide computer column">
-            <i class="huge inverted yellow volume control call icon site-header__icon"></i>
-          </div>
-          <div class="fourteen wide mobile fourteen wide tablet seven wide computer column site-header__contact-mob">
-            <span><strong>021 203 6686</strong> - Mosese Tupou (Director)</span><br>
-            <span><strong>022 585 2300</strong> - Oleseni Vaikaka (Vehicle Inspector)<br></span>
-            <span><strong>292C Great South RD, Manurewa</strong></span>
+    <div class="container-fluid _header">
+      <div class="container">
+          <div class="row">
+            <div class="col _header__logo">
+                <a href="#">
+                    <img src="./resources/media/fastfixCarRepair-XL.jpg" alt="FastFix Logo">
+                </a>
+            </div>
+            <div class="col-md-auto align-self-center">
+                <i class="fa fa-phone fa-4x _header__phoneIcon" aria-hidden="true"></i>
+            </div>
+            <div class="col align-self-center _header__contact">
+              
+              <p>021 203 6686 - Mosese Tupou (Director)</p>    
+              <p>022 153 5054 - Oleseni Vaikaka (Vehicle Inspector)</p>
+              <p><strong>Contact:</strong> 09 269 5521</p>
+              <p><strong>Address:</strong> 292C Great South Road, Manurewa</p>
+            </div>
+
           </div>
         </div>
-      </div>
     </div>
 
-    <div class="ui fluid container main-section">
-      <div class="ui container">
-        <br>
-        <h1 class="main-section__h1">Your Experts in WOF, Car REPAIRS, Car SERVCING and Car Maintenance</h1>
-        <br>
-        <div class="ui stackable grid">
-          <div class="eight wide computer column">
-            <h1 class="ui top attached header inverted">
-              Prices
-            </h1>
-            <h4 class="ui attached header">
-              <p>Warrant of Fitness (WOF) - $40</p>
-            </h4>
-            <h4 class="ui attached header">
-              Service Oil Change from $80 (Petrol Card Only)
-            </h4>
-            <h4 class="ui attached header">
-              Service Oil Change from $150 (Diesel Cars)
-            </h4>
-            <h4 class="ui attached header">
-              Replace brake pads from $110 (Japanese Cars)
-            </h4>
-            <h4 class="ui attached header">
-              Replace brake pads from $150 (European Cars)
-            </h4>
-            <div class="ui bottom attached warning message">
-              <i class="big warning icon"></i>
-                GET $10 OFF Your Total Bill! (Till the end of Dec 2017)</span>
-            </div>
-          </div>
-          <!-- <div class="four wide column"></div> -->
-          <div class="one wide computer column"></div>
-          <div class="seven wide computer column">
-            <div class="ui top attached segment inverted red main-section__open">
-              <div class="two column row">
-                <div class="column">
-                  <h3 class="main-section__h3"><strong>Opening Hours</strong></h3>
+    <div class="container-fluid _banner">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12">
+            <div id="banner_carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner  _banner__carousel">
+                <div class="carousel-item active">
+                  <h2 class="text-center text-justify">Warrant of Fitness (WOF)</h2>
                 </div>
-                <div class="right floated left aligned column ">
-                  <ul class="share-buttons">
-                    <li><a href="https://www.facebook.com/FastFixAutomotive/" title="Facebook Page" target="_blank"><img alt="Go to our Facebook" src="./resources/media/socialmedia/Facebook.png" /></a></li>
-                    <li><a href="mailto:fastfix.mt@gmail.com" target="_blank" title="Car Repair Query"><img alt="Send email" src="./resources/media/socialmedia/Email.png"/></a></li>
-                  </ul>
+                <div class="carousel-item">
+                  <h2 class="text-center text-justify">Car Servicing</h2>
                 </div>
-              </div>
+                <div class="carousel-item">
+                  <h2 class="text-center text-justify">Tyre Replacement and Repairs</h2>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="text-center text-justify">Mechanical Repairs</h2>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="text-center text-justify">Work Repairs &amp Income Quotes</h2>
+                </div>
             </div>
-            <div class="ui attached segment">
-              <h4><strong>Mon - Fri:</strong> 08:00am - 5:00pm</h4>
-            </div>
-            <div class="ui attached segment">
-              <h4><strong>Sat:</strong> 08:00 - 03:00pm</h4>
-            </div>
-            <div class="ui bottom attached segment">
-              <h3>292C Great South Road, Manurewa</h3>
-              <div class="main-section__google-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.2748578347878!2d174.90524822928134!3d-37.031275498743845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d528ef24ae6af%3A0x34b47323acfcde31!2s292+Great+South+Rd%2C+Manurewa%2C+Auckland+2102!5e0!3m2!1sen!2snz!4v1510530478969" frameborder="0" height="300" width="100%" style="border:0" allowfullscreen></iframe>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-    <div class="ui fluid container footer">
-    </div>
     
+    <div class="container-fluid _main">
+        <div class="container">
+          <div class="row _main__listGroup">
+            <div class="col">
+              <ul class="list-group _main__prices">
+                <li class="list-group-item list-group-item-dark _main__prices--title">Services</li>
+                <li class="list-group-item">Warrant of Fitness (WOF) - $40</li>
+                <li class="list-group-item">Service Oil Change from $80 (Petrol Card Only)</li>
+                <li class="list-group-item">Service Oil Change from $150 (Diesel Cars)</li>
+                <li class="list-group-item">Replace brake pads from $110 (Japanese Cars)</li>
+                <li class="list-group-item">Replace brake pads from $150 (European Cars)</li>
+            </ul>
+            <ul class="list-group _main__info">
+                <li class="list-group-item list-group-item-dark">
+                    Our new workshop is open in Manurewa. We do W.O.F, Car Service, tyres changes and all other mechanical repairs. If you need anything to be done for your 
+                    vehicle, we're are the right people for it, give us a call, or come and visit us to get vehicle checked.
+                </li>
+            </ul>
+            </div>
+            <div class="col-lg-auto">
+            </div>
+            <div class="col">
+              <ul class="list-group _main__openingHrs">
+                  <li class="list-group-item _main__openingHrs--title">
+                      Opening Hours : 09 269 5521
+                  </li>
+                  <li class="list-group-item"><span class="_main__hrs"><strong>Mon - Fri: </strong>08:00am - 5:00pm</span></li>
+                  <li class="list-group-item"><span class="_main__hrs"><strong>Sat: </strong>08:00am - 3:00pm</span></li>
+                  <li class="list-group-item"><span class="_main__hrs"><strong>Address: </strong>292C Great South Road, Manurewa</li>
+                  <li class="list-group-item _main__gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.2748578347878!2d174.90524822928134!3d-37.031275498743845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d528ef24ae6af%3A0x34b47323acfcde31!2s292+Great+South+Rd%2C+Manurewa%2C+Auckland+2102!5e0!3m2!1sen!2snz!4v1510530478969" frameborder="0" height="300" width="100%" style="border:0" allowfullscreen></iframe></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid _banner__footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="text-center">Come Visit Us and Ask Us about our Christmas Specials !!!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid _footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="_footer__social">
+            <ul class="share-buttons">
+              <li><a href="https://www.facebook.com/FastFixAutomotive/" title="Facebook Page" target="_blank"><img alt="Go to our Facebook" src="./resources/media/socialmedia/Facebook.png" /></a></li>
+              <li><a href="mailto:fastfix.mt@gmail.com" target="_blank" title="Car Repair Query"><img alt="Send email" src="./resources/media/socialmedia/Email.png"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="./resources/scripts/app.js"></script>
   </body>
 </html>
